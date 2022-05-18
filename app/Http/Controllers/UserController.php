@@ -20,7 +20,7 @@ class UserController extends Controller
     public function delete($id){
         $user = User::where('id',$id)->first();
         $data = User::whereId($id)->delete();
-        return response()->json(['data' => $user,'message' => 'Data berhasil dihapus!']);
+        return response()->json(['data' => $user,'message' => 'Data Mahasiswa berhasil dihapus!']);
     }
 
     public function store(){
